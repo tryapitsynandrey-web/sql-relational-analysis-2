@@ -1,8 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
 .env
 .venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Tooling and caches
+.pytest_cache/
+tests/.pytest_cache/
+
+# Databases and related artifacts
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Project specific directories
 exports/
 logs/
-*.db
-__pycache__/
-*.py
 data/
