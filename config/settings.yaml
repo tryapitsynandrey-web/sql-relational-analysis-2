@@ -1,0 +1,8 @@
+database:
+  type: duckdb
+  path: data/analytics.db
+  pool_size: 5
+
+app:
+  debug: false
+  name: sql-relational-analysis-2

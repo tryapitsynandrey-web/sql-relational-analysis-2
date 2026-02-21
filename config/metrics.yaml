@@ -1,0 +1,76 @@
+# Revenue & Economics
+aov_trends:
+  description: "Average Order Value (AOV) smoothed with a 7-day moving average."
+  domain: "revenue"
+  sql_file: "src/models/marts/aov_trends.sql"
+
+ltv_by_cohort:
+  description: "Customer Lifetime Value tracking cumulative revenue by acquisition cohort."
+  domain: "revenue"
+  sql_file: "src/models/marts/ltv_by_cohort.sql"
+
+revenue_degradation:
+  description: "Month-over-month and week-over-week revenue degradation analysis."
+  domain: "revenue"
+  sql_file: "src/models/marts/revenue_degradation.sql"
+
+
+# User Behavior & Retention
+cohort_retention:
+  description: "User cohort retention rates over 7, 14, and 30 days."
+  domain: "behavior"
+  sql_file: "src/models/marts/cohort_retention.sql"
+
+dau_mau_ratio:
+  description: "Daily Active Users to Monthly Active Users stickiness ratio."
+  domain: "behavior"
+  sql_file: "src/models/marts/dau_mau_ratio.sql"
+
+rfm_segments:
+  description: "Customer segmentation by Recency, Frequency, and Monetary value clusters."
+  domain: "behavior"
+  sql_file: "src/models/marts/rfm_segments.sql"
+
+market_basket_pairs:
+  description: "Frequent itemsets purchased together in the same cart."
+  domain: "behavior"
+  sql_file: "src/models/marts/market_basket_pairs.sql"
+
+
+# Funnels & Conversion
+view_to_cart_funnel:
+  description: "Drop-off rate from product view to add-to-cart and final purchase."
+  domain: "funnel"
+  sql_file: "src/models/marts/view_to_cart_funnel.sql"
+
+cart_abandonment_rate:
+  description: "Daily tracker of carts created against successful purchases."
+  domain: "funnel"
+  sql_file: "src/models/marts/cart_abandonment_rate.sql"
+
+time_to_first_purchase:
+  description: "Time elapsed from first view to an initial successful checkout."
+  domain: "funnel"
+  sql_file: "src/models/marts/time_to_first_purchase.sql"
+
+
+# Temporal & Anomalies
+hourly_conversion_heatmap:
+  description: "Conversion rates mapped by hour of day and day of week."
+  domain: "temporal"
+  sql_file: "src/models/marts/hourly_conversion_heatmap.sql"
+
+weekend_degradation:
+  description: "Analysis of average sessions and revenue comparing weekends to weekdays."
+  domain: "temporal"
+  sql_file: "src/models/marts/weekend_degradation.sql"
+
+time_of_day_aov_correlation:
+  description: "Correlation between time of purchase mapping explicitly to AOV swings."
+  domain: "temporal"
+  sql_file: "src/models/marts/time_of_day_aov_correlation.sql"
+
+anomaly_detection:
+  description: "Rule-based model detecting 20% drops against a 7-day conversion average."
+  domain: "temporal"
+  sql_file: "src/models/alerts/anomaly_detection.sql"
