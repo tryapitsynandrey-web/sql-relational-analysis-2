@@ -19,7 +19,7 @@ The system strictly decouples analytical modeling and display interfaces, struct
 - **Models (`src/models/`)**: Structured analytical domains (e.g., `staging`, `marts`, `alerts`), providing the precise SQL transformations orchestrated by the core.
 - **Utils (`src/utils/`)**: General operations including TTL-based Dataframe cache (`cache_manager.py`), structured logging, export management, and specific formatters.
 
-## Features
+## Featuress
 
 - **SQL-First Metric Configuration**: Dynamic evaluation of SQL files defined declaratively in `config/metrics.yaml`.
 - **E-Commerce Dashboard**: Includes segmented tabs for Revenue & Economics, User Behavior & Retention, Funnels, Temporal properties, and Metric Dependencies.
